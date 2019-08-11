@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon.ico">
+    <title>React - A JavaScript library for building user interfaces</title>
+</head>
+<body>
+<header>
+    <a href="#"><img src="img/react.svg" width="23" height="20" alt="reactLogo"><span>React</span></a>
+    <nav>
+        <a href="#">Docs</a>
+        <a href="#">Tutorial</a>
+        <a href="#">Blog</a>
+        <a href="#">Community</a>
+    </nav>
+    <form>
+        <input type="search" id="search" placeholder="Search">
+    </form>
+    <div>
+        <a href="#">v16.9.0</a>
+        <a href="#"><span>Languages</span></a>
+        <a href="https://github.com/facebook/react/" target="_blank">GitHub</a>
+    </div>
+</header>
+<main>
+    <header>
+        <h1>React</h1>
+        <p>A JavaScript library for building user interfaces</p>
+        <div>
+            <a href="#">Get Started</a>
+        </div>
+        <div>
+            <a href="#">Take the Tutorial</a>
+        </div>
+    </header>
+    <section>
+        <div id="principles">
+            <div>
+                <h3>Declarative</h3>
+                <p>React makes it painless to create interactive UIs. Design simple views for each state in your
+                    application, and React will efficiently update and render just the right components when your data
+                    changes.</p>
+                <p>Declarative views make your code more predictable and easier to debug.</p>
+            </div>
+            <div>
+                <h3>Component-Based</h3>
+                <p>Build encapsulated components that manage their own state, then compose them to make complex
+                    UIs.nents when your data changes.</p>
+                <p>Since component logic is written in JavaScript instead of templates, you can easily pass rich data
+                    through your app and keep state out of the&nbsp;DOM.</p>
+            </div>
+            <div>
+                <h3>Learn&nbsp;Once, Write&nbsp;Anywhere</h3>
+                <p>We don’t make assumptions about the rest of your technology stack, so you can develop new features in
+                    React without rewriting existing code.</p>
+                <p>React can also render on the server using Node and power mobile apps using <a
+                        href="https://facebook.github.io/react-native/" target="_blank">React Native</a></p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="examples">
+            <div class="simple-component">
+                <div class="text">
+                    <h3>A Simple Component</h3>
+                    <div>
+                        <p>React components implement a render() method that takes input data and returns what to
+                            display. This example uses an XML-like syntax called JSX. Input data that is passed into the
+                            component can be accessed by render() via this.props.</p>
+                        <p><strong>JSX is optional and not required to use React.</strong> Try the <a
+                                href="https://babeljs.io/repl/#?presets=react&amp;code_lz=MYewdgzgLgBApgGzgWzmWBeGAeAFgRgD4AJRBEAGhgHcQAnBAEwEJsB6AwgbgChRJY_KAEMAlmDh0YWRiGABXVOgB0AczhQAokiVQAQgE8AkowAUAcjogQUcwEpeAJTjDgUACIB5ALLK6aRklTRBQ0KCohMQk6Bx4gA"
+                                target="_blank">Babel REPL</a> to see the raw JavaScript code produced
+                            by the JSX compilation step.</p>
+                    </div>
+                </div>
+                <div class="react-example">
+                    <div class="right">
+                        <div>
+                            LIVE JSX EDITOR<label><input type="checkbox" checked="">JSX?</label>
+                        </div>
+                        <div>
+                            Code example
+                        </div>
+                    </div>
+                    <div class="left">
+                        <div>Result</div>
+                        <div>Hello Taylor</div>
+                    </div>
+                </div>
+            </div>
+            <div class="stateful-component">
+                <div class="text">
+                    <h3>A Stateful Component</h3>
+                    <div>
+                        <p>In addition to taking input data (accessed via this.props), a component can maintain internal
+                            state data (accessed via this.state). When a component’s state data changes, the rendered
+                            markup will be updated by re-invoking render().</p>
+                    </div>
+                    <div class="react-example">
+                        <div class="right">
+                            <div>
+                                LIVE JSX EDITOR<label><input type="checkbox" checked="">JSX?</label>
+                            </div>
+                            <div>
+                                Code example
+                            </div>
+                        </div>
+                        <div class="left">
+                            <div>Result</div>
+                            <div>Seconds: 9592</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="application">
+                    <div class="text">
+                        <h3>An Application</h3>
+                        <div>
+                            <p>Using props and state, we can put together a small Todo application. This example uses
+                                state to track the current list of items as well as the text that the user has entered.
+                                Although event handlers appear to be rendered inline, they will be collected and
+                                implemented using event delegation.</p>
+                        </div>
+                    </div>
+                    <div class="react-example">
+                        <div class="right">
+                            <div>
+                                LIVE JSX EDITOR<label><input type="checkbox" checked="">JSX?</label>
+                            </div>
+                            <div>
+                                Code example
+                            </div>
+                        </div>
+                        <div class="left">
+                            <div>Result</div>
+                            <div>
+                                <h3>TODO</h3>
+                                <form>
+                                    <label for="new-todo">What needs to be done?</label>
+                                    <input id="new-todo">
+                                    <button>Add #1</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="using-external-plugins">
+                    <div class="text">
+                        <h3>A Component Using External Plugins</h3>
+                        <div>
+                            <p>React allows you to interface with other libraries and frameworks. This example uses
+                                <strong>remarkable</strong>, an external Markdown library, to convert the &lt;textarea&gt;’s
+                                value in real time.</p>
+                        </div>
+                    </div>
+                    <div class="react-example">
+                        <div class="right">
+                            <div>
+                                LIVE JSX EDITOR<label><input type="checkbox" checked="">JSX?</label>
+                            </div>
+                            <div>
+                                Code example
+                            </div>
+                        </div>
+                        <div class="left">
+                            <div>Result</div>
+                            <div>
+                                <h3>Input</h3>
+                                <label for="markdown">Enter some markdown</label>
+                                <textarea id="markdown">Hello, **world**!</textarea>
+                                <h3>Output</h3>
+                                <p>Hello, <strong>world</strong>!</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="start">
+            <div><a href="#">Get Started</a></div>
+            <div><a href="#">Take the Tutorial</a></div>
+        </div>
+    </section>
+    <footer>
+        <section>
+            <a href="https://code.facebook.com/projects/" target="_blank"><img alt="Facebook Open Source"
+                                                                               src="img/OpenSours.png"></a>
+            <p>Copyright © 2019 Facebook Inc.</p>
+        </section>
+        <section>
+            <div class="docs">
+                <h3>DOCS</h3>
+                <ul>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">Main Concepts</a></li>
+                    <li><a href="#">Advanced Guides</a></li>
+                    <li><a href="#">API Reference</a></li>
+                    <li><a href="#">Hooks (new)</a></li>
+                    <li><a href="#">Testing</a></li>
+                    <li><a href="#">Contributing</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="community">
+                <h3>COMMUNITY</h3>
+                <ul>
+                    <li><a href="#">Community Resources</a></li>
+                    <li><a href="#">Tools</a></li>
+                </ul>
+            </div>
+            <div class="channels">
+                <h3>CHANNELS</h3>
+                <ul>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Stack Overflow</a></li>
+                    <li><a href="#">Discussion Forums</a></li>
+                    <li><a href="#">Reactiflux Chat</a></li>
+                    <li><a href="#">DEV Community</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="more">
+                <h3>MORE</h3>
+                <ul>
+                    <li><a href="#">Tutorial</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Acknowledgements</a></li>
+                    <li><a href="#">React Native</a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+</main>
+</body>
+</html>
